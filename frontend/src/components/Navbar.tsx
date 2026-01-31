@@ -8,6 +8,7 @@ const Navbar = () => {
         <button>Kobe Bryant</button>
         <button>Henessy</button>
         <button>Denzel Washington</button>
+        <button>Pickels</button>
       </div>
 
       <div className="flex justify-center gap-2 font-thin">
