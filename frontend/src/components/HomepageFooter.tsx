@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-const HomepageFooter = (props: Props) => {
+const HomepageFooter = () => {
   return (
     <div className='w-full bg-gray-200 p-10 flex justify-between'>
       <div>make great shit.</div>

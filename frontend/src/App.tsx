@@ -1,18 +1,14 @@
-import HomepageCarousel from "./components/HomepageCarousel"
-import HomepageFooter from "./components/HomepageFooter"
-import Navbar from "./components/Navbar"
-import ShopByCategory from "./components/ShopByCategory"
+import { BrowserRouter, Route, Routes } from "react-router"
+import Homepage from "./pages/Homepage"
 
 function App() {
 
   return (
-    <div className="w-full h-screen">
-      <Navbar />
-      <HomepageCarousel />
-      <ShopByCategory />
-      <HomepageFooter />
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
