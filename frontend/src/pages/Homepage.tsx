@@ -3,9 +3,7 @@ import HomepageCarousel from '../components/HomepageCarousel'
 import ShopByCategory from '../components/ShopByCategory'
 import HomepageFooter from '../components/HomepageFooter'
 
-type Props = {}
-
-const Homepage = (props: Props) => {
+const Homepage = () => {
   return (
     <div className="w-full h-screen">
       <Navbar />
