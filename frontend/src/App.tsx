@@ -4,6 +4,8 @@ import Blogs from "./pages/Blogs"
 import SingleBlogPage from "./pages/SingleBlogPage"
 import LoginPage from "./pages/LoginPage"
 import Dashboard from "./pages/Dashboard"
+import AdminLayout from "./layout/AdminLayout"
+import AdminProducts from "./pages/AdminProducts"
 
 function App() {
 
@@ -16,7 +18,10 @@ function App() {
 
         <Route path="/auth/login" element={<LoginPage />} />
 
-         <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Dashboard />}/>
+            <Route path="products" element={<AdminProducts/>}/>
+          </Route>
       </Routes>
     </BrowserRouter>
   )
