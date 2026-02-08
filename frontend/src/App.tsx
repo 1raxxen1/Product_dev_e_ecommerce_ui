@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage"
 import Dashboard from "./pages/Dashboard"
 import AdminLayout from "./layout/AdminLayout"
 import AdminProducts from "./pages/AdminProducts"
+import AdminBlogs from "./pages/AdminBlogs"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />}/>
             <Route path="products" element={<AdminProducts/>}/>
+            <Route path="blogs" element={<AdminBlogs/>}/>
           </Route>
       </Routes>
     </BrowserRouter>
