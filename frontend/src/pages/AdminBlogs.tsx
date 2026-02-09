@@ -46,7 +46,7 @@ const AdminBlogs = () => {
       </div>
 
       <div className="w-3/4 flex flex-col bg-white">
-        
+        Your selected blog
       </div>
     </div>
   )
