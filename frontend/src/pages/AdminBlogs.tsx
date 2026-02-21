@@ -1,3 +1,5 @@
+import RichTextEditor from "../components/RichTextEditor"
+
 type Blog = {
   id: string
   title: string
@@ -45,8 +47,8 @@ const AdminBlogs = () => {
         ))}
       </div>
 
-      <div className="w-3/4 flex flex-col bg-white">
-        Your selected blog
+      <div className="w-3/4 flex flex-col bg-gray-200">
+        <RichTextEditor />
       </div>
     </div>
   )
